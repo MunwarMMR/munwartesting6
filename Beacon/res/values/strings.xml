@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_text_size_summary">Select size of text</string>
+    <string name="pref_text_size">Text size</string>
+    <string name="pref_staff_user_summary">Toggle staff user (off only)</string>
+    <string name="pref_staff_user">Staff User</string>
+    <string name="pref_vibrate_summary">Toggle vibration</string>
+    <string name="pref_vibrate">Vibrate</string>
+    <string name="pref_send_report_summary">Must restart to take effect</string>
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+
+    <!-- Defaults -->
+    <string name="alert_notif">Alert</string>
+    <string name="content_title">Crothall Beacon</string>
+    <string name="content_text">Press to return to app</string>
+    <string name="hello">Crothall Healthcare</string>
+    <string name="launch_notif">Crothall Beacon Connected</string>
+    <string name="default_user"></string>
+    <string name="default_password"></string>
+    <string name="activity_name">Crothall Beacon</string>
+    <string name="instructions">Slide from the right to the left to switch between views</string>
+    <string name="old_default_platform">https://www.submitarequest.com/hrc/HRCMain.aspx</string>
+    <string name="prod_platform">http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+    <string name="im_notif">Instant Message</string>
+
+    <!-- Action Fragment -->
+    <string name="completeOther">Complete</string>
+    <string name="delayReason">Delay Reason</string>
+    <string name="cancelReason">Cancel Reason</string>
+    <string name="requestCancellation">Cancel</string>
+    <string name="requestCancel">Request\nCancel</string>
+
+    <!-- SelfTask Fragment -->
+    <string name="createSelfTask">Create Transport\nTask</string>
+    <string name="createRoundTripTask">Create Return Trip\nTask</string>
+
+    <!-- Pre-defined users and platforms -->
+
+    <string name="adefault_platform">http://198.84.29.16/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+    <string name="default_platform">http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+
+    <string-array name="username_array">
+
+        <!-- <item>mobile1</item> -->
+
+        <item>kimm</item>
+        <item>kim1</item>
+        <!-- <item>ting@i3.io</item> -->
+        <!-- <item>mobile1@iicorporate.com</item> -->
+        <item>stanm</item>
+        <item>Shilpatest</item>
+
+        <!-- <item>mobile1</item> -->
+        <!-- <item>BJAWS</item> -->
+        <!-- <item>bay</item> -->
+        <!-- <item>H_WrightA</item> -->
+        <!-- <item>ellis</item> -->
+    </string-array>
+    <string-array name="password_array">
+
+        <!-- <item>123</item> -->
+        <item>123</item>
+        <item>123</item>
+        <!-- <item>1972</item> -->
+        <!-- <item>123</item> -->
+        <item>123</item>
+        <item>234</item>
+        <!-- <item>1972</item> -->
+        <!-- <item>123</item> -->
+        <!-- <item>8625</item> -->
+        <!-- <item>123</item> -->
+    </string-array>
+    <string-array name="platform_array">
+
+        <!-- <item>Boston Medical Center</item> -->
+        <!-- <item>Boston Medical Center</item> -->
+        <item>OH</item>
+        <item>OH</item>
+        <item>OH</item>
+        <item>OH</item>
+
+        <!-- <item>http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</item> -->
+        <!-- <item>http://64.34.137.78/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</item> -->
+        <!-- <item>http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</item> -->
+        <!-- <item>http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</item> -->
+        <!-- <item>http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</item> -->
+    </string-array>
+
+    <string name="intent_app_name">Intent Blocker</string>
+    <string name="intent_block_service_stopped">Intent Blocker Service stopped</string>
+    <string name="intent_block_service_started">Intent Blocker Service started</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="enter">Enter</string>
+    <!--  -->
+    <string name="long_click_on_login">false</string>
+    <string name="download_url">http://i3build.cloudapp.net/team/</string>
+    <string name="adownload_url">http://i3build.cloudapp.net/cm/</string>
+    <string name="crothall_comment">Old comment</string>
+    <string name="app_file">beacon</string>
+    <!-- <string name="production_download_url">http://i3build.cloudapp.net/team/</string> -->
+    <!-- <string name="beta_download_url">http://i3build.cloudapp.net/cm/</string> -->
+
+
+    <!-- <string name="production_download_url">http://168.61.65.186/team/</string> -->
+    <!-- <string name="production_download_url">https://npc.crothall.com/t/client/</string> -->
+    <string name="production_download_url">https://hrctest.crothall.com/m/t/</string>
+    <!-- <string name="production_download_url">https://hrctest.crothall.com/m/t/</string> -->
+    <string name="beta_download_url">https://hrctest.crothall.com/m/t/</string>
+    <!-- <string name="beta_download_url">https://npc.crothall.com/t/client/</string> -->
+    <!-- Turns on crash guard if true -->
+
+    <bool name="isDemoVersion">false</bool>
+
+    <!-- canada -->
+
+
+    <!-- <string name="server_url">https://hrctest.crothall.com/flow/</string> -->
+
+    <string name="server_url">https://npc.crothall.com/flow/</string>
+
+    <!-- http://64.34.137.78/hrc/hrcmain.aspx -->
+    <!-- crothall-canada\brad budge -->
+
+
+    <!-- Beacon -->
+
+    <string name="app_name">Crothall Beacon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="slno">SlNo</string>
+    <string name="mac">MAC Address</string>
+    <string name="ssid">Name</string>
+    <string name="strength">Strength</string>
+    <string name="frequency">Frequency (Hz)</string>
+    <string name="wifiDetails">Wifi Details</string>
+    <string name="throughput">Throughput</string>
+    <string name="connected">Connected</string>
+    <string name="refresh">Refresh</string>
+    <string name="take_sample">Take Sample</string>
+    <string name="mail_session">Mail Sample</string>
+    <string name="str_continue">Continue</string>
+    <string name="select_geo">Select Geography</string>
+    <string name="geo">Geography</string>
+
+    <bool name="isProduction">false</bool>
+    <bool name="wantCrashReport">true</bool>
+    <bool name="isTestVersion">false</bool>
+
+    <string name="devId">542a6dc183fb795b70000007</string>
+    <string name="prodId">54295a34466eda478a000002</string>
+    <string name="testId">5486db1c466eda134e00000b</string>
+    <string name="crothall_version">1.4.5</string>
+
+</resources>

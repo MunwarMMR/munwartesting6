@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:apiKey="0G59coe_FxE9doBcB6PCf0WEUCogUJDvOvTvDnA" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:id="@+id/fullScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fullScreen"
+        android:layout_centerHorizontal="true"
+        android:text="foobar"
+        android:textColor="#AAAAAA" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:src="@drawable/crothrall_healthcare_logo" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerInParent="false"
+        android:background="#FFFFFF"
+        android:stretchColumns="1" >
+
+        <Button
+            android:id="@+id/legacyToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:text="Team Flow" >
+        </Button>
+
+        <Button
+            android:id="@+id/flowEnterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/legacyToggle"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_button"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/log_in"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" >
+        </Button>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/unitTestView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_below="@+id/buttons"
+        android:layout_marginBottom="17dp" />
+
+</RelativeLayout>

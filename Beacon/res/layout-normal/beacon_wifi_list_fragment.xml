@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.androidpractice.MainActivity$PlaceholderFragment" >
+
+    <View
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <ScrollView
+        android:id="@+id/sv_wifilist"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:id="@+id/lout_networks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="middle"
+            android:stretchColumns="0,1,2,3" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/ssid"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/strength"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Type"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <fragment
+        android:id="@+id/fg_sample_view"
+        android:name="com.ii.mobile.beacon.fragments.SampleFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1.5"
+        android:padding="5dp" />
+
+</LinearLayout>

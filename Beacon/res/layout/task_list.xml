@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLine"
+        style="@style/DetailStyle.navBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- logo -->
+
+        <ImageView
+            android:id="@+id/logoIcon"
+            style="@style/DetailStyle.navBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dip"
+            android:src="@drawable/icon" />
+        <!-- android:layout_marginTop="5dip" -->
+        <!-- android:layout_marginBottom="5dip" -->
+        <!-- NavBar -->
+        <!-- com.sbs.mobile.workorder.WorkorderNavBar -->
+        <!-- android:layout_marginTop="7dip" -->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/autoComplete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <view
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/navigationBar"
+                style="@style/DetailStyle.navBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                class="com.ii.mobile.task.activity.NavBar"
+                android:background="#000000"
+                android:gravity="bottom"
+                android:text="This is text"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- xbutton -->
+
+        <ImageButton
+            android:id="@+id/xButton"
+            style="@style/DetailStyle.navBar"
+            android:layout_width="26dip"
+            android:layout_height="26dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-32dip"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="xButtonClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/x_image_highlight"
+            android:visibility="invisible" />
+        <!-- android:layout_marginTop="15dip" -->
+        <!-- funnel -->
+
+        <ImageButton
+            android:id="@+id/funnelButton"
+            style="@style/DetailStyle.navBar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dip"
+            android:clickable="true"
+            android:onClick="funnelClick"
+            android:src="@drawable/funnel_highlight" />
+        <!-- android:layout_marginTop="15dip" -->
+        <!-- upDownArrows -->
+
+        <ImageButton
+            android:id="@+id/upDownArrowsButton"
+            style="@style/DetailStyle.navBar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="15dip"
+            android:clickable="true"
+            android:onClick="upDownArrowsClick"
+            android:src="@drawable/up_down_highlight" />
+    </LinearLayout>
+    <!-- android:layout_marginTop="15dip" -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottomLine"
+        style="@style/DetailStyle.navBar.status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- statusOne -->
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/statusOne"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:text="" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/bar1"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_weight="0"
+            android:text="|" />
+
+        <!-- statusTwo -->
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/statusTwo"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:text="" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/bar2"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_weight="0"
+            android:text="|" />
+
+        <!-- statusThree -->
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/statusThree"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:text="" />
+    </LinearLayout>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+/>
+    </LinearLayout>
+
+</LinearLayout>

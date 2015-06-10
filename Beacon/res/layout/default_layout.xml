@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:id="@+id/defaultTextView"
+        style="@style/DetailStyle.bold.large"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="false"
+        android:textColor="#000000" />
+
+</RelativeLayout>

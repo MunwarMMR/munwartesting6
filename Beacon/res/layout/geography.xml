@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="5dp"
+    tools:context="com.example.androidpractice.MainActivity$PlaceholderFragment" >
+
+    <View
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <!--
+         <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_below="@id/tv_top"
+        android:text="@string/geo"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    -->
+    <!-- android:layout_below="@id/tv_title" -->
+
+    <TextView
+        android:id="@+id/tv_select_geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/select_geo"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/sp_geography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_select_geo"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_geography"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_geography"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:hint="@string/geo"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_geography"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="@string/str_continue"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

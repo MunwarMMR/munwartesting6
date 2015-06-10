@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rel_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" >
+
+        <TextView
+            android:id="@+id/tv_un"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="9dip"
+            android:layout_marginTop="20dip"
+            android:text="User Name "
+            android:textColor="#444444"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/et_un"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_un"
+            android:layout_toRightOf="@id/tv_un"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text"
+            android:textColor="#444444" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_uid"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tv_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="9dip"
+            android:layout_marginTop="15dip"
+            android:text="Password "
+            android:textColor="#444444"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_pw"
+            android:layout_marginLeft="11dip"
+            android:layout_toRightOf="@id/tv_pw"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textPassword"
+            android:textColor="#444444" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/button_bg"
+        android:padding="5dip"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
